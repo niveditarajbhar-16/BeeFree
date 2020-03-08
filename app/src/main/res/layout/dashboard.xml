@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/rlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:rowCount="2">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/addNumber"
+                android:orientation="vertical"
+                android:layout_width="140dp"
+                android:layout_height="160dp"
+                android:padding="8dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="20dp">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="76dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/ic_emergancy_call"
+                        android:padding="20dp"></ImageView>
+
+                    <TextView
+                        android:textColor="#2d2d2d"
+                        android:textSize="13sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Add Number"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/self_defence"
+                android:orientation="vertical"
+                android:layout_width="140dp"
+                android:layout_height="160dp"
+                android:padding="8dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="20dp">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="76dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/ic_self_defence"
+                        android:padding="20dp"></ImageView>
+
+                    <TextView
+                        android:textColor="#2d2d2d"
+                        android:textSize="13sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Videos for Self Defence"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:textSize="15dp"
+        android:textColor="@color/colorPurple"
+        android:layout_marginBottom="40dp"
+        android:paddingLeft="32dp"
+        android:text="Press the Down Volume Key to Open up the camera"/>
+
+</RelativeLayout>

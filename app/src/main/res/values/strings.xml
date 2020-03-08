@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BeeFree</string>
+    <string name="first_name_error">please insert first name</string>
+    <string name="last_name_error">please insert last name</string>
+    <string name="mobile_no_error">please insert mobile no</string>
+
+    <string name="navigation_drawer_open">navigationdraweropen</string>
+    <string name="navigation_drawer_close">navigationdrawerclose</string>
+</resources>
